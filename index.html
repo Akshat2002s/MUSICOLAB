@@ -9,591 +9,746 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
   <style>
-* {
-  margin: 0;
-  padding: 0;
-  align-items: center;
-}
-
-html {
-  scroll-behavior: smooth;
-  background: #23092D;
-}
-
-header {
-  z-index: 100;
-  width: 90%;
-  height: 13%;
-  margin-left: 5%;
-  display: flex;
-  top: 0;
-  left: 0;
-  right: 0;
-  position: fixed;
-  background: #23092D;
-}
-
-body {
-  overflow-x: hidden;
-  width: 90%;
-  margin-left: 5%;
-  margin-right: 5%;
-  font-size: 100%;
-  font-family: Poppins, sans-serif;
-  font-family: Sacramento, cursive;
-  text-decoration: none;
-}
-
-#home {
-  background: #23092D;
-}
-
-ul {
-  text-decoration: none;
-  list-style: none;
-  font-family: Poppins, sans-serif;
-}
-
-.quote {
-  position: absolute;
-  font-size: 1.5rem;
-  font-family: Poppins, sans-serif;
-  top: 20%;
-  color: #FFFFFF;
-  animation: drop 1.5s ease;
-}
-
-.hozier {
-  position: absolute;
-  top: 30%;
-  left: -5%;
-  animation: drop 1.5s ease;
-  transform-origin: center;
-}
-
-section {
-  width: 100%;
-  float: left;
-  height: 100vh;
-  position: relative;
-}
-
-#menu li a {
-  text-decoration: none;
-  list-style: none;
-  color: #FFFFFF;
-}
-
-.line1 {
-  position: absolute;
-  left: 67.5%;
-  top: 20%;
-}
-
-.line2 {
-  position: absolute;
-  left: 87%;
-  top: 20%;
-}
-
-.head {
-  position: absolute;
-  left: 149%;
-  top: 0%;
-  font-family: Poppins, sans-serif;
-  font-size: 4rem;
-  color: #FFFFFF;
-}
-
-.tagline {
-  position: absolute;
-  white-space: nowrap;
-  left: 149%;
-  top: 25%;
-  font-size: 2.3rem;
-  color: #FFFFFF;
-  animation: drop 1.5s ease;
-}
-
-.title {
-  position: absolute;
-  font-family: Sacramento;
-  left: 13%;
-  top: 20%;
-  font-size: 2rem;
-  color: #FFFFFF;
-}
-
-#nav-links li a {
-  text-decoration: none;
-  list-style: none;
-  color: #FFFFFF;
-}
-
-.joinus {
-  position: absolute;
-  left: 149%;
-  top: 50%;
-  width: 20%;
-  height: 10%;
-  cursor: pointer;
-  border: 2px solid #2B52B4;
-  background: transparent;
-  color: #2B52B4;
-  border-radius: 10px;
-  font-size: 1.25rem;
-  animation: drop 1.5s ease;
-  text-decoration: none;
-}
-
-.login {
-  position: absolute;
-  background: #2B52B4;
-  left: 185%;
-  top: 50%;
-  width: 20%;
-  height: 10%;
-  cursor: pointer;
-  border-radius: 10px;
-  font-size: 1.25rem;
-  color: #FFFFFF;
-  text-decoration: none;
-  animation: drop 1.5s ease;
-}
-
-.el {
-  z-index: -1;
-}
-
-.el1 {
-  position: absolute;
-  width: 35%;
-  height: 42.5%;
-  left: 20%;
-  top: 70%;
-  border-radius: 50%;
-  background: rgba(43, 82, 180, 0.1);
-  animation: drop 1.5s ease;
-}
-
-.el2 {
-  position: absolute;
-  width: 35%;
-  height: 42.5%;
-  left: 80%;
-  top: -20%;
-  border-radius: 50%;
-  background: rgba(43, 82, 180, 0.1);
-  animation: drop 1.5s ease;
-}
-
-.el3 {
-  position: absolute;
-  width: 35%;
-  height: 42.5%;
-  ;
-  left: 140%;
-  top: 60%;
-  border-radius: 50%;
-  background: rgba(43, 82, 180, 0.1);
-  animation: drop 1.5s ease;
-}
-
-.el4 {
-  position: absolute;
-  width: 70%;
-  height: 85%;
-  left: 200%;
-  top: 60%;
-  border-radius: 50%;
-  background: rgba(43, 82, 180, 0.2);
-  animation: drop 1.5s ease;
-}
-
-#aboutus {
-  background: black;
-}
-
-.moodboard {
-  position: absolute;
-  top: 20%;
-  left: 5%;
-  opacity: 100%;
-  animation: drop 1.5s ease;
-}
-
-.heading {
-  position: absolute;
-  font-family: Poppins, sans-serif;
-  color: #FFFFFF;
-  font-size: 2rem;
-  left: 60%;
-  top: -14%;
-  z-index: 999999;
-}
-
-.tex {
-  position: absolute;
-  font-family: Poppins, sans-serif;
-  font-size: 1.5rem;
-  color: #FFFFFF;
-  top: -2%;
-  left: 60%;
-}
-
-.tagline2 {
-  position: absolute;
-  color: #FFFFFF;
-  font-size: 2.5rem;
-  left: 60%;
-  top: 85%;
-}
-
-#login {
-  background: #23092D;
-}
-
-.rectangle {
-  position: absolute;
-  height: 60%;
-  width: 30%;
-  background: rgba(43, 82, 180, 0.2);
-  left: 63%;
-  top: 30%;
-  border: 2px solid #2B52B4;
-  border-radius: 10px;
-}
-
-.inp1 {
-  decoration: none;
-  position: absolute;
-  background: #23092D;
-  color: white;
-  height: 5%;
-  width: 27.5%;
-  left: 64.25%;
-  top: 40%;
-  border-radius: 10px;
-  border: 2px solid #2B52B4;
-}
-
-.inptext1 {
-  position: absolute;
-  left: 64.25%;
-  top: 35%;
-  font-style: 1.5rem;
-  font-family: Poppins, sans-serif;
-  color: #FFFFFF;
-}
-
-.inp2 {
-  decoration: none;
-  position: absolute;
-  background: #23092D;
-  color: white;
-  height: 5%;
-  width: 27.5%;
-  left: 64.25%;
-  top: 60%;
-  border-radius: 10px;
-  border: 2px solid #2B52B4;
-}
-
-.getin {
-  decoration: none;
-  position: absolute;
-  background: #23092D;
-  color: white;
-  height: 5%;
-  width: 8%;
-  left: 74%;
-  top: 70%;
-  border-radius: 10px;
-  border: 2px solid #2B52B4;
-  cursor: pointer;
-}
-
-.getin:hover {
-  transform: scale(1.3);
-}
-
-.inptext2 {
-  position: absolute;
-  left: 64.25%;
-  top: 55%;
-  font-style: 1.5rem;
-  font-family: Poppins, sans-serif;
-  color: #FFFFFF;
-}
-
-
-.lheading {
-  position: absolute;
-  top: 15%;
-  left: 71%;
-  font-family: Poppins, sans-serif;
-  font-size: 2rem;
-  color: #FFFFFF;
-}
-
-.lquote {
-  position: absolute;
-  top: 22%;
-  left: 61%;
-  font-size: 2.5rem;
-  color: #FFFFFF;
-}
-
-.beatles {
-  position: absolute;
-  top: 30%;
-}
-
-.google {
-  position: absolute;
-  top: 77%;
-  left: 82.5%;
-  z-index: 1;
-}
-
-.facebook {
-  position: absolute;
-  top: 77%;
-  left: 64%;
-  z-index: 1;
-}
-
-.bquote {
-  position: absolute;
-  font-family: Poppins, sans-serif;
-  color: #FFFFFF;
-  font-size: 1.5rem;
-  top: 15%;
-}
-
-
-.el5 {
-  position: absolute;
-  width: 18.5%;
-  height: 35%;
-  left: 0%;
-  top: 70%;
-  border-radius: 50%;
-  background: rgba(43, 82, 180, 0.1);
-  animation: drop 1.5s ease;
-}
-
-.el6 {
-  position: absolute;
-  width: 18.5%;
-  height: 35%;
-  left: 30%;
-  top: 0%;
-  border-radius: 50%;
-  background: rgba(43, 82, 180, 0.1);
-  animation: drop 1.5s ease;
-}
-
-.el7 {
-  position: absolute;
-  width: 18.5%;
-  height: 35%;
-  left: 60%;
-  top: 60%;
-  border-radius: 50%;
-  background: rgba(43, 82, 180, 0.1);
-  animation: drop 1.5s ease;
-}
-
-.el8 {
-  position: absolute;
-  width: 37%;
-  height: 70%;
-  left: 80%;
-  top: 80%;
-  border-radius: 50%;
-  background: rgba(43, 82, 180, 0.2);
-  animation: drop 1.5s ease;
-}
-
-#signup {
-  background: black;
-}
-
-.sheading {
-  position: absolute;
-  top: 15%;
-  left: 44%;
-  font-family: Poppins, sans-serif;
-  font-size: 2rem;
-  color: #FFFFFF;
-}
-
-.squote {
-  position: absolute;
-  top: 22%;
-  left: 34%;
-  font-size: 2.5rem;
-  color: #FFFFFF;
-}
-
-.rectanglesignup {
-  position: absolute;
-  height: 67%;
-  width: 99.7%;
-  background: rgba(43, 82, 180, 0.2);
-  top: 30.25%;
-  border: 2px solid #2B52B4;
-  border-radius: 10px;
-}
-
-.line{
-  position: absolute;
-  background: white;
-  left:50%;
-  width: 1px;
-  height: 60%;
-  top: 33.75%;
-  opacity: 0.4;
-}
-
-.inpname{
-  decoration: none;
-  position: absolute;
-  background: #23092D;
-  color: white;
-  height: 3%;
-  width: 20%;
-  left: 2%;
-  top: 40%;
-  border-radius: 10px;
-  border: 2px solid #2B52B4;
-}
-
-.inpemail{
-  decoration: none;
-  position: absolute;
-  background: #23092D;
-  color: white;
-  height: 3%;
-  width: 20%;
-  left: 2%;
-  top: 50%;
-  border-radius: 10px;
-  border: 2px solid #2B52B4;
-}
-
-.inpusername{
-  decoration: none;
-  position: absolute;
-  background: #23092D;
-  color: white;
-  height: 3%;
-  width: 20%;
-  left: 2%;
-  top: 60%;
-  border-radius: 10px;
-  border: 2px solid #2B52B4;
-}
-
-.inppassword{
-  decoration: none;
-  position: absolute;
-  background: #23092D;
-  color: white;
-  height: 3%;
-  width: 20%;
-  left: 2%;
-  top: 70%;
-  border-radius: 10px;
-  border: 2px solid #2B52B4;
-}
-
-.confpassword{
-  decoration: none;
-  position: absolute;
-  background: #23092D;
-  color: white;
-  height: 3%;
-  width: 20%;
-  left: 2%;
-  top: 80%;
-  border-radius: 10px;
-  border: 2px solid #2B52B4;
-}
-.name{
-  position: absolute;
-  top:37%;
-  left:2.25%;
-  color: white;
-  font-family: Poppins, sans-serif;
-}
-
-.email{
-  position: absolute;
-  top:47%;
-  left:2.25%;
-  color: white;
-  font-family: Poppins, sans-serif;
-}
-
-.username{
-  position: absolute;
-  top:57%;
-  left:2.25%;
-  color: white;
-  font-family: Poppins, sans-serif;
-}
-
-.password{
-  position: absolute;
-  top:67%;
-  left:2.25%;
-  color: white;
-  font-family: Poppins, sans-serif;
-}
-
-.dropdown1{
-  position: absolute;
-  top:87a%;
-  left:2%;
-  width: 10%;
-  background: #23092D;
-  color: white;
-  border-radius: 3px;
-  border: 2px solid #2B52B4;
-}
-
-@keyframes drop {
-  0% {
-    opacity: 0;
-    transform: translateY(-80px);
-  }
-
-  50% {
-    opacity: 0.5;
-  }
-
-  100% {
-    opacity: 0.9999999999999;
-    transform: translateY(0px);
-  }
-}
-</style>
+    * {
+      margin: 0;
+      padding: 0;
+      align-items: center;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      background: #23092D;
+    }
+
+    header {
+      z-index: 100;
+      width: 90%;
+      height: 13%;
+      margin-left: 5%;
+      display: flex;
+      top: 0;
+      left: 0;
+      right: 0;
+      position: fixed;
+      background: #23092D;
+    }
+
+    body {
+      overflow-x: hidden;
+      width: 90%;
+      margin-left: 5%;
+      margin-right: 5%;
+      font-size: 100%;
+      font-family: Poppins, sans-serif;
+      font-family: Sacramento, cursive;
+      text-decoration: none;
+    }
+
+    #home {
+      background: #23092D;
+    }
+
+    ul {
+      text-decoration: none;
+      list-style: none;
+      font-family: Poppins, sans-serif;
+    }
+
+    .quote {
+      position: absolute;
+      font-size: 1.5rem;
+      font-family: Poppins, sans-serif;
+      top: 20%;
+      color: #FFFFFF;
+      animation: drop 1.5s ease;
+    }
+
+    .hozier {
+      position: absolute;
+      top: 30%;
+      left: -5%;
+      animation: drop 1.5s ease;
+      transform-origin: center;
+    }
+
+    section {
+      width: 100%;
+      float: left;
+      height: 100vh;
+      position: relative;
+    }
+
+    #menu li a {
+      text-decoration: none;
+      list-style: none;
+      color: #FFFFFF;
+    }
+
+    .line1 {
+      position: absolute;
+      left: 67.5%;
+      top: 20%;
+    }
+
+    .line2 {
+      position: absolute;
+      left: 87%;
+      top: 20%;
+    }
+
+    .head {
+      position: absolute;
+      left: 149%;
+      top: 0%;
+      font-family: Poppins, sans-serif;
+      font-size: 4rem;
+      color: #FFFFFF;
+    }
+
+    .tagline {
+      position: absolute;
+      white-space: nowrap;
+      left: 149%;
+      top: 25%;
+      font-size: 2.3rem;
+      color: #FFFFFF;
+      animation: drop 1.5s ease;
+    }
+
+    .title {
+      position: absolute;
+      font-family: Sacramento;
+      left: 13%;
+      top: 20%;
+      font-size: 2rem;
+      color: #FFFFFF;
+    }
+
+    #nav-links li a {
+      text-decoration: none;
+      list-style: none;
+      color: #FFFFFF;
+    }
+
+    .joinus {
+      position: absolute;
+      left: 149%;
+      top: 50%;
+      width: 20%;
+      height: 10%;
+      cursor: pointer;
+      border: 2px solid #2B52B4;
+      background: transparent;
+      color: #2B52B4;
+      border-radius: 10px;
+      font-size: 1.25rem;
+      animation: drop 1.5s ease;
+      text-decoration: none;
+    }
+
+    .login {
+      position: absolute;
+      background: #2B52B4;
+      left: 185%;
+      top: 50%;
+      width: 20%;
+      height: 10%;
+      cursor: pointer;
+      border-radius: 10px;
+      font-size: 1.25rem;
+      color: #FFFFFF;
+      text-decoration: none;
+      animation: drop 1.5s ease;
+    }
+
+    .el {
+      z-index: -1;
+    }
+
+    .el1 {
+      position: absolute;
+      width: 35%;
+      height: 42.5%;
+      left: 20%;
+      top: 70%;
+      border-radius: 50%;
+      background: rgba(43, 82, 180, 0.1);
+      animation: drop 1.5s ease;
+    }
+
+    .el2 {
+      position: absolute;
+      width: 35%;
+      height: 42.5%;
+      left: 80%;
+      top: -20%;
+      border-radius: 50%;
+      background: rgba(43, 82, 180, 0.1);
+      animation: drop 1.5s ease;
+    }
+
+    .el3 {
+      position: absolute;
+      width: 35%;
+      height: 42.5%;
+      ;
+      left: 140%;
+      top: 60%;
+      border-radius: 50%;
+      background: rgba(43, 82, 180, 0.1);
+      animation: drop 1.5s ease;
+    }
+
+    .el4 {
+      position: absolute;
+      width: 70%;
+      height: 85%;
+      left: 200%;
+      top: 60%;
+      border-radius: 50%;
+      background: rgba(43, 82, 180, 0.2);
+      animation: drop 1.5s ease;
+    }
+
+    #aboutus {
+      background: black;
+    }
+
+    .moodboard {
+      position: absolute;
+      top: 20%;
+      left: 5%;
+      opacity: 100%;
+      animation: drop 1.5s ease;
+    }
+
+    .heading {
+      position: absolute;
+      font-family: Poppins, sans-serif;
+      color: #FFFFFF;
+      font-size: 2rem;
+      left: 60%;
+      top: -14%;
+      z-index: 999999;
+    }
+
+    .logo {}
+
+    .tex {
+      position: absolute;
+      font-family: Poppins, sans-serif;
+      font-size: 1.5rem;
+      color: #FFFFFF;
+      top: -2%;
+      left: 60%;
+    }
+
+    .tagline2 {
+      position: absolute;
+      color: #FFFFFF;
+      font-size: 2.5rem;
+      left: 60%;
+      top: 85%;
+    }
+
+    #login {
+      background: #23092D;
+    }
+
+    .rectangle {
+      position: absolute;
+      height: 60%;
+      width: 30%;
+      background: rgba(43, 82, 180, 0.2);
+      left: 63%;
+      top: 30%;
+      border: 2px solid #2B52B4;
+      border-radius: 10px;
+    }
+
+    .inp1 {
+      decoration: none;
+      position: absolute;
+      background: #23092D;
+      color: white;
+      height: 5%;
+      width: 27.5%;
+      left: 64.25%;
+      top: 40%;
+      border-radius: 10px;
+      border: 2px solid #2B52B4;
+    }
+
+    .inptext1 {
+      position: absolute;
+      left: 64.25%;
+      top: 35%;
+      font-style: 1.5rem;
+      font-family: Poppins, sans-serif;
+      color: #FFFFFF;
+    }
+
+    .inp2 {
+      decoration: none;
+      position: absolute;
+      background: #23092D;
+      color: white;
+      height: 5%;
+      width: 27.5%;
+      left: 64.25%;
+      top: 60%;
+      border-radius: 10px;
+      border: 2px solid #2B52B4;
+    }
+
+    .getin {
+      decoration: none;
+      position: absolute;
+      background: #23092D;
+      color: white;
+      height: 5%;
+      width: 8%;
+      left: 74%;
+      top: 70%;
+      border-radius: 10px;
+      border: 2px solid #2B52B4;
+      cursor: pointer;
+    }
+
+    .getin:hover {
+      transform: scale(1.3);
+    }
+
+    .inptext2 {
+      position: absolute;
+      left: 64.25%;
+      top: 55%;
+      font-style: 1.5rem;
+      font-family: Poppins, sans-serif;
+      color: #FFFFFF;
+    }
+
+
+    .lheading {
+      position: absolute;
+      top: 15%;
+      left: 71%;
+      font-family: Poppins, sans-serif;
+      font-size: 2rem;
+      color: #FFFFFF;
+    }
+
+    .lquote {
+
+      top: 980px;
+      left: 61%;
+      font-size: 2.5rem;
+      color: #FFFFFF;
+    }
+
+    .beatles {
+      position: absolute;
+      top: 30%;
+    }
+
+    .google {
+      position: absolute;
+      top: 77%;
+      left: 82.5%;
+      z-index: 1;
+    }
+
+    .facebook {
+      position: absolute;
+      top: 77%;
+      left: 64%;
+      z-index: 1;
+    }
+
+    .bquote {
+      position: absolute;
+      font-family: Poppins, sans-serif;
+      color: #FFFFFF;
+      font-size: 1.5rem;
+      top: 15%;
+    }
+
+
+    .el5 {
+      position: absolute;
+      width: 18.5%;
+      height: 35%;
+      left: 0%;
+      top: 70%;
+      border-radius: 50%;
+      background: rgba(43, 82, 180, 0.1);
+      animation: drop 1.5s ease;
+    }
+
+    .el6 {
+      position: absolute;
+      width: 18.5%;
+      height: 35%;
+      left: 30%;
+      top: 0%;
+      border-radius: 50%;
+      background: rgba(43, 82, 180, 0.1);
+      animation: drop 1.5s ease;
+    }
+
+    .el7 {
+      position: absolute;
+      width: 18.5%;
+      height: 35%;
+      left: 60%;
+      top: 60%;
+      border-radius: 50%;
+      background: rgba(43, 82, 180, 0.1);
+      animation: drop 1.5s ease;
+    }
+
+    .el8 {
+      position: absolute;
+      width: 37%;
+      height: 70%;
+      left: 80%;
+      top: 80%;
+      border-radius: 50%;
+      background: rgba(43, 82, 180, 0.2);
+      animation: drop 1.5s ease;
+    }
+
+    #signup {
+      background: black;
+    }
+
+    .sheading {
+      position: absolute;
+      top: 15%;
+      left: 44%;
+      font-family: Poppins, sans-serif;
+      font-size: 2rem;
+      color: #FFFFFF;
+    }
+
+    .squote {
+      position: absolute;
+      top: 22%;
+      left: 34%;
+      font-size: 2.5rem;
+      color: #FFFFFF;
+    }
+
+    .rectanglesignup {
+      position: absolute;
+      height: 67%;
+      width: 99.7%;
+      background: rgba(43, 82, 180, 0.2);
+      top: 30.25%;
+      border: 2px solid #2B52B4;
+      border-radius: 10px;
+    }
+
+    .line {
+      position: absolute;
+      background: white;
+      left: 50%;
+      width: 1px;
+      height: 60%;
+      top: 33.75%;
+      opacity: 0.4;
+    }
+
+    .inpname {
+      decoration: none;
+      position: absolute;
+      background: #23092D;
+      color: white;
+      height: 3%;
+      width: 20%;
+      left: 2%;
+      top: 40%;
+      border-radius: 10px;
+      border: 2px solid #2B52B4;
+    }
+
+    .inpemail {
+      decoration: none;
+      position: absolute;
+      background: #23092D;
+      color: white;
+      height: 3%;
+      width: 20%;
+      left: 2%;
+      top: 50%;
+      border-radius: 10px;
+      border: 2px solid #2B52B4;
+    }
+
+    .inpusername {
+      decoration: none;
+      position: absolute;
+      background: #23092D;
+      color: white;
+      height: 3%;
+      width: 20%;
+      left: 2%;
+      top: 60%;
+      border-radius: 10px;
+      border: 2px solid #2B52B4;
+    }
+
+    .inppassword {
+      decoration: none;
+      position: absolute;
+      background: #23092D;
+      color: white;
+      height: 3%;
+      width: 20%;
+      left: 2%;
+      top: 70%;
+      border-radius: 10px;
+      border: 2px solid #2B52B4;
+    }
+
+    .confpassword {
+      decoration: none;
+      position: absolute;
+      background: #23092D;
+      color: white;
+      height: 3%;
+      width: 20%;
+      left: 2%;
+      top: 80%;
+      border-radius: 10px;
+      border: 2px solid #2B52B4;
+    }
+
+    .name {
+      position: absolute;
+      top: 37%;
+      left: 2.25%;
+      color: white;
+      font-family: Poppins, sans-serif;
+    }
+
+    .email {
+      position: absolute;
+      top: 47%;
+      left: 2.25%;
+      color: white;
+      font-family: Poppins, sans-serif;
+    }
+
+    .username {
+      position: absolute;
+      top: 57%;
+      left: 2.25%;
+      color: white;
+      font-family: Poppins, sans-serif;
+    }
+
+    .password {
+      position: absolute;
+      top: 67%;
+      left: 2.25%;
+      color: white;
+      font-family: Poppins, sans-serif;
+    }
+
+    .dropdown1 {
+      position: absolute;
+      top: 87a%;
+      left: 2%;
+      width: 10%;
+      background: #23092D;
+      color: white;
+      border-radius: 3px;
+      border: 2px solid #2B52B4;
+    }
+
+    @keyframes drop {
+      0% {
+        opacity: 0;
+        transform: translateY(-80px);
+      }
+
+      50% {
+        opacity: 0.5;
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(0px);
+      }
+    }
+
+    @media screen and (max-width: 1400px) {
+      html {
+        align-items: center;
+        align-content: center;
+        justify-items: center;
+        justify-content: center;
+        align-self: center;
+      }
+
+      body {
+        flex-direction: column;
+      }
+
+      .quote {
+        margin-left: 0.5vh;
+        margin-top: 5vh;
+        text-align: center;
+        transform: scale(0.95);
+      }
+
+      .hozier {
+        transform: scale(0.75);
+        left: -38%;
+      }
+
+      .beatles {
+        opacity: 0;
+      }
+
+      .rectangle {
+        height: 65%;
+        width: 50%;
+        left: 25%;
+      }
+
+      .inp1 {
+        left: 27.75%;
+        width: 45%;
+      }
+
+      .inptext1 {
+        left: 28.25%;
+
+      }
+
+      .inptext2 {
+        left: 28.25%;
+
+      }
+
+      .head {
+        left: 99%;
+        font-size: 3rem;
+      }
+
+      .inp2 {
+        left: 27.75%;
+        width: 45%;
+      }
+
+      .tagline {
+        left: 85%;
+      }
+
+      .getin {
+        left: 48%
+      }
+
+      .joinus {
+        font-size: 1.7rem;
+        left: 90%;
+        top: 80%;
+      }
+
+      .login {
+        font-size: 1.7rem;
+        left: 115%;
+        top: 80%;
+      }
+
+      .facebook {
+        left: 30%;
+      }
+
+      .google {
+
+        left: 52%;
+
+      }
+
+      .lquote {
+        opacity: 0;
+      }
+
+      .bquote {
+        opacity: 0;
+      }
+
+      .lheading {
+        left: 37%;
+        top: 23%;
+      }
+
+      .lheading:hover {
+        font-size: 3rem;
+        left: 30%;
+        top: 19%;
+      }
+
+      .tex {
+        top: 15%;
+        margin-right: 50px;
+        font-size: 1rem;
+      }
+
+      .intro-text h1 {
+        font-size: 30px;
+      }
+
+      .intro-text p {
+        font-size: 18px;
+      }
+
+      .login {
+        padding: 10px 0px 0px 0px;
+      }
+
+      .tagline2 {
+        left: 6%;
+        top: 150%;
+        font-size: 3.5rem;
+
+      }
+
+      .hozier {
+        height: 80%;
+        width: 120%;
+      }
+
+      .el3,
+      .el2,
+      .el1,
+      .el4,
+      .el5,
+      .el6,
+      .el7,
+      .el8,
+      .el9 {
+        opacity: 0;
+
+      }
+    }
+  </style>
 </head>
 
 <header>
-  <div class="logo"><img src="./images/logo1.png" height=30% width=30%</div>
-    <ul id="menu">
-      <li>
-        <div class="title"><a href="#home"> Musicolab </a></div>
-      </li>
-      <li>
-        <div class="line1"><a href="#aboutus">About Us</a></div>
-      </li>
-      <li>
-        <div class="line2"><a href="#explore">Explore</a></div>
-      </li>
+  <div class="logo"><img src="./images/logo1.png" height=30% width=30%</div> <ul id="menu">
+    <li>
+      <div class="title"><a href="#home"> Musicolab </a></div>
+    </li>
+    <li>
+      <div class="line1"><a href="#aboutus">About Us</a></div>
+    </li>
+    <li>
+      <div class="line2"><a href="#explore">Explore</a></div>
+    </li>
     </ul>
 </header>
 
@@ -601,43 +756,42 @@ section {
   <div class="landing"></div>
   <section id="home">
     <div class="quote">I never wrote music for the mainstream<br>-Hozier</div>
-    <div class="hozier"><img src="./images/hozier.png" height=120% width=120% </div>
-      <div class="head">Musicolab</div>
-      <div class="tagline">Melodies are better composed together.</div>
-      <ul id="nav-links">
-        <li><button class="joinus"><a href="#signup">Join Us</a></button></li>
-        <li><button class="login"><a href="#login">Login</a></button></li>
-      </ul>
-      <div class="el">
-        <div class="el1"></div>
-        <div class="el2"></div>
-        <div class="el3"></div>
-        <div class="el4"></div>
+    <div class="hozier"><img src="./images/hozier.png" height=120% width=120% </div> <div class="head">Musicolab</div>
+    <div class="tagline">Melodies are better composed together.</div>
+    <ul id="nav-links">
+      <li><button class="joinus"><a href="#signup">Join Us</a></button></li>
+      <li><button class="login"><a href="#login">Login</a></button></li>
+    </ul>
+    <div class="el">
+      <div class="el1"></div>
+      <div class="el2"></div>
+      <div class="el3"></div>
+      <div class="el4"></div>
   </section><br>
   <section id="aboutus">
-    <div class="moodboard"><img src="./images/moodboard.png" height=70% width=50%</div>
-      <div class="heading">About us</div>
-      <div class="tex">
-          We are here with an initiative to make sure
-          that all your musical dreams come true.<br> MUSICOLAB is
-          the ultimate platform to display and enhance your creativity.
-          Collaborate with artists, upload your music
-          together, create your very own musical
-          network and a lot more.
-          Keep jamming, keep learning, but most
-          importantly, have fun.<br>
-      </div>
-      <div class="tagline2">Let's compose melodies together</div>
+    <div class="moodboard"><img src="./images/moodboard.png" height=70% width=50%</div> <div class="heading">About us
+    </div>
+    <div class="tex">
+      We are here with an initiative to make sure
+      that all your musical dreams come true.<br> MUSICOLAB is
+      the ultimate platform to display and enhance your creativity.
+      Collaborate with artists, upload your music
+      together, create your very own musical
+      network and a lot more.
+      Keep jamming, keep learning, but most
+      importantly, have fun.<br>
+    </div>
+    <div class="tagline2">Let's compose melodies together</div>
 
   </section>
   <section id="login">
     <div class="lheading">MUSICOLAB</div>
     <div class="lquote">Melodies are better composed together</div>
-    <div class="beatles"><img src="./images/Beatles-final.png" height=80% width= 80%></div>
+    <div class="beatles"><img src="./images/Beatles-final.png" height=80% width=80%></div>
     <div class="bquote">Take these broken wings and learn how to fly<br>
-                        -The Beatles</div>
-    <div class="google"><a href="#"><img src="./images/Google logo.png" height=50% width= 50%></a></div>
-    <div class="facebook"><a href="#"><img src="./images/facebook logo.png" height=50% width= 50%></a></div>
+      -The Beatles</div>
+    <div class="google"><a href="#"><img src="./images/Google logo.png" height=50% width=50%></a></div>
+    <div class="facebook"><a href="#"><img src="./images/facebook logo.png" height=50% width=50%></a></div>
     <div class="rectangle"></div>
     <div class="rectangle3"></div>
     <form>
@@ -653,7 +807,7 @@ section {
     <div class="el8"></div>
   </section>
   <section id="signup">
-    
+
   </section>
 
 
